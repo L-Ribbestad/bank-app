@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Tre Kronor Bank</h1>
+    <form id="accountForm">
+        <h2>Skapa ett nytt konto</h2>
+        <input type="text" name="accountName" id="accountName" placeholder="Kontots ägare" required>
+        <label id="moneyLabel" for="accountMoney" hidden>Ange summa:</label>
+        <input type="number" name="accountMoney" id="accountMoney" placeholder="Mängd pengar" required>
+        <select name="addOrRemove" id="addOrRemove" hidden>
+            <option value="add">Sätt in</option>
+            <option value="remove">Ta ut</option>
+        </select>
+        <button>Spara</button>
+        <button type="reset">Avbryt</button>
+    </form>
+    <h2>Alla konton</h2>
+    <ul id="accountList">
+
+    </ul>
+</body>
+</html>
